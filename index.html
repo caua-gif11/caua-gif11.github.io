@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cauã de Souza Sturaro | Desenvolvedor Front-End</title>
+<meta name="description" content="Portfólio de Cauã de Souza Sturaro, desenvolvedor Front-End: projetos, skills e certificados.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="progress" id="progress"></div>
+<canvas id="bg"></canvas>
+<div class="glow" id="glow"></div>
+<div class="ring" id="ring"></div>
+
+<header class="top">
+  <a href="#inicio" class="logo">Cauã<span>.</span></a>
+  <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false"><i></i><i></i></button>
+  <nav id="menu">
+    <a href="#sobre">Sobre</a>
+    <a href="#skills">Skills</a>
+    <a href="#certificados">Certificados</a>
+    <a href="#contato">Contato</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero" id="inicio">
+    <div class="hero-text">
+      <p class="hello">Olá, eu sou</p>
+      <h1>Cauã de Souza <em>Sturaro</em></h1>
+      <p class="role">Desenvolvedor <b id="typing"></b><span class="caret"></span></p>
+      <p class="lead">Crio interfaces modernas, responsivas e fáceis de usar. Estudo programação todo dia e transformo ideias em projetos que funcionam de verdade.</p>
+      <div class="actions">
+        <a href="#certificados" class="btn solid">Ver certificados</a>
+        <a href="https://github.com/caua-gif11" target="_blank" rel="noopener" class="btn line">Meu GitHub</a>
+        <a href="https://www.instagram.com/caua.st8/" target="_blank" rel="noopener" class="btn line">Instagram</a>
+      </div>
+    </div>
+    <div class="terminal" id="terminal" aria-label="Resumo em formato de terminal">
+      <div class="bar"><i></i><i></i><i></i><span>cauã.js</span></div>
+      <pre id="code"></pre>
+    </div>
+  </section>
+
+  <section class="sec" id="sobre">
+    <h2>Quem sou eu</h2>
+    <div class="about">
+      <div class="photo" id="photo"><img src="assets/foto.jpg" alt="Foto de Cauã de Souza Sturaro" width="320" height="320"></div>
+      <div class="about-text">
+        <p class="big">Estudante e desenvolvedor que quer entender como sites e sistemas funcionam por trás das telas.</p>
+        <p>Comecei pela curiosidade e fui para a prática: estudo, faço cursos e coloco tudo em projetos próprios. Gosto de páginas organizadas, rápidas e bonitas, pensadas para quem vai usar.</p>
+        <p>Além do desenvolvimento web, me interesso por Inteligência Artificial e por como ela muda a forma de programar. Meu objetivo é continuar evoluindo e construir minha carreira em tecnologia.</p>
+        <div class="stats">
+          <div><b data-to="5">0</b><span>certificados</span></div>
+          <div><b data-to="91">0</b><span>horas de estudo</span></div>
+          <div><b data-to="8">0</b><span>áreas de estudo</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="skills">
+    <h2>Skills</h2>
+    <div class="tabs" role="tablist">
+      <button class="on" data-f="all">Todas</button>
+      <button data-f="web">Web</button>
+      <button data-f="code">Programação</button>
+      <button data-f="tools">Ferramentas</button>
+    </div>
+    <div class="grid" id="skillGrid">
+      <article class="card" data-g="web"><h3>HTML</h3><p>Estrutura semântica e organizada para cada página.</p><button class="chip" data-cert="0">Certificado FGV</button></article>
+      <article class="card" data-g="web"><h3>CSS</h3><p>Layouts, responsividade, animações e visual moderno.</p><button class="chip" data-cert="0">Certificado FGV</button></article>
+      <article class="card" data-g="web"><h3>JavaScript</h3><p>Lógica e interatividade para deixar as páginas vivas.</p><button class="chip" data-cert="4">Certificado Curso em Vídeo</button></article>
+      <article class="card" data-g="web"><h3>Front-End</h3><p>Interfaces responsivas e focadas na experiência de quem usa.</p></article>
+      <article class="card" data-g="code"><h3>Python</h3><p>Lógica de programação, aplicações e automação de tarefas.</p><button class="chip" data-cert="2">Certificado Santander</button></article>
+      <article class="card" data-g="code"><h3>Banco de Dados</h3><p>Modelagem, modelo relacional e normalização de dados.</p><button class="chip" data-cert="1">Certificado IFRS</button></article>
+      <article class="card" data-g="tools"><h3>Git e GitHub</h3><p>Versionamento de código e projetos publicados no GitHub.</p><button class="chip" data-cert="3">Certificado Cursa</button></article>
+      <article class="card" data-g="tools"><h3>Inteligência Artificial</h3><p>Explorando IA como aliada no desenvolvimento de soluções.</p></article>
+    </div>
+  </section>
+
+  <section class="sec" id="certificados">
+    <h2>Certificados</h2>
+    <p class="sub">Arraste a galeria e clique no certificado do centro para ampliar.</p>
+    <div class="flow" id="flow"></div>
+    <div class="flow-ui"><button id="fPrev" aria-label="Anterior">‹</button><p id="fCap"></p><button id="fNext" aria-label="Próximo">›</button></div>
+  </section>
+
+  <section class="sec contact" id="contato">
+    <h2>Vamos conversar?</h2>
+    <p class="sub">Veja meus códigos no GitHub ou me siga no Instagram.</p>
+    <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap">
+      <a href="https://github.com/caua-gif11" target="_blank" rel="noopener" class="btn solid">Abrir meu GitHub</a>
+      <a href="https://www.instagram.com/caua.st8/" target="_blank" rel="noopener" class="btn line">Meu Instagram</a>
+    </div>
+  </section>
+</main>
+
+<footer><p>© 2026 Cauã de Souza Sturaro. Desenvolvedor Front-End.</p></footer>
+
+<div class="lb" id="lb" hidden>
+  <button class="x" id="lbClose" aria-label="Fechar">×</button>
+  <button class="nav prev" id="lbPrev" aria-label="Anterior">‹</button>
+  <figure><img id="lbImg" alt=""><figcaption id="lbCap"></figcaption></figure>
+  <button class="nav next" id="lbNext" aria-label="Próximo">›</button>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
